@@ -78,16 +78,16 @@ public class SampleActionTest {
 
 	@Test
 	public void testExecuteNormal() {
-// 		SampleAction action = new SampleAction("firstName", "lastName");
-// 		HttpServletRequest request = createMock(HttpServletRequest.class);
-// 		HttpSession session = createMock(HttpSession.class);
+		SampleAction action = new SampleAction("firstName", "lastName");
+		HttpServletRequest request = createMock(HttpServletRequest.class);
+		HttpSession session = createMock(HttpSession.class);
 
-// 		expect(request.getSession(true)).andReturn(session);
+		expect(request.getSession(true)).andReturn(session);
 
-// 		replay(request);
-// 		String result = action.execute(request);
-// 		verify(request);
+		replay(request);
+		String result = action.execute(request);
+		verify(request);
 
-// 		assertTrue("./WEB-INF/result.jsp".equals(result));
+		assertTrue("./WEB-INF/result.jsp".equals(result));
 	}
 }
