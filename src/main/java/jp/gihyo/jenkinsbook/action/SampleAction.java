@@ -64,14 +64,16 @@ public class SampleAction {
     public final String execute(final HttpServletRequest request) {
         SampleDTO dto = new SampleDTO(firstName, lastName);
         
+        
         //Select the greeting message according to the time 
         Calendar calengar = Calendar.getInstance();
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
         if (hour < 12){
             dto.setMessage("Good morning");
-        }else{
+        } else {
             dto.setMessage("Good afternoon");
         }
+        
 
         HttpSession session = request.getSession(true);
         session.setAttribute("dto", dto);
