@@ -66,7 +66,7 @@ public class SampleAction {
         
         
         //Select the greeting message according to the time 
-        Calendar calengar = Calendar.getInstance();
+        Calendar calendar = Calendar.getInstance();
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
         if (hour < 12){
             dto.setMessage("Good morning");
