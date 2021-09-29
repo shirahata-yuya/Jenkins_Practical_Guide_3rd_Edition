@@ -3,7 +3,7 @@
  phases: 
    install: 
      runtime-versions: 
-       java: correto8 
+       java: corretto8 
    pre_build: 
      commands: 
        - echo Nothing to do in this phase 
