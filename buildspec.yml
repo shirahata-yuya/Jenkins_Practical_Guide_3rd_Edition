@@ -17,6 +17,8 @@
  artifacts: 
    files: 
      - target/sampleproject.war
+     - appspec.yml
+     - deploy.sh
    discard-paths: yes 
  cache: 
    paths: 
