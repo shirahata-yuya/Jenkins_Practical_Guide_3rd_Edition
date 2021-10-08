@@ -24,7 +24,7 @@ public class SampleTestCase {
 	@BeforeClass
 	public static void setUpClass() throws IOException {
 		prop.load(new FileInputStream("target\\test-classes\\selenium.properties"));
-		System.setProperty("webdriver.edge.driver", "C:\\Users\\shirahata.yuya\\Downloads\\edgedriver_win64\\msedgedriver.exe");
+		System.setProperty("webdriver.edge.driver", "src/test/resources/msedgedriver.exe");
 		driver = new EdgeDriver();
 	}
 
