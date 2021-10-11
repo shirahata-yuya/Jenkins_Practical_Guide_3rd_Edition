@@ -63,9 +63,6 @@
     <selenium.baseUrl>http://54.168.58.42:8080</selenium.baseUrl>
   </properties>
     
-    <!-- Checkstyle Properties -->
-    <maven-checkstyle.version>2.17</maven-checkstyle.version>
-    
     <!-- Findbugs Properties -->
     <findbugs-maven.version>3.0.4</findbugs-maven.version>
     
