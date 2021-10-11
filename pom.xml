@@ -34,6 +34,12 @@
       <version>${easymock.version}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>${selenium-java.version}</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   
   <properties>
@@ -100,6 +106,13 @@
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
       </plugin>
+      
+      <testResources>
+       <testResource>
+        <directory>src/test/resources</directory>
+        <filtering>true</filtering>
+       </testResource>
+      </testResources>
       
       <!-- Build Configuration for Checkstyle -->
       <plugin>
