@@ -9,8 +9,7 @@
        - echo Nothing to do in this phase 
    build: 
      commands: 
-       - echo Build started on `date`
-       - mvn test
+       - echo Build started on `date` 
        - mvn clean package 
    post_build: 
      commands: 
