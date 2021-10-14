@@ -7,7 +7,7 @@
    pre_build: 
      commands: 
        - echo Nothing to do in this phase 
-       - chmod +x msedgedriver.exe
+       - chmod +x src/test/resources/msedgedriver.exe
    build: 
      commands: 
        - echo Build started on `date` 
