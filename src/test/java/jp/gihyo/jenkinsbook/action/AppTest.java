@@ -1,5 +1,10 @@
 package jp.gihyo.jenkinsbook.action;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
 public void testGoogleSearch() throws InterruptedException {
     System.setProperty("webdriver.edge.driver", "/usr/bin/msedgedriver.exe");
  
