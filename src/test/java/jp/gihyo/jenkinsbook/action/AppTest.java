@@ -1,3 +1,5 @@
+package jp.gihyo.jenkinsbook.action;
+
 public void testGoogleSearch() throws InterruptedException {
     System.setProperty("webdriver.edge.driver", "/usr/bin/msedgedriver.exe");
  
