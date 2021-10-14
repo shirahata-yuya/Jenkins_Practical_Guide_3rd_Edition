@@ -29,8 +29,8 @@ public class SampleTestCase {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		
-		//DesiredCapabilities m_capability = DesiredCapabilities.edge();
-		//driver = new ChromeDriver(m_capability);
+		DesiredCapabilities m_capability = DesiredCapabilities.edge();
+		driver = new ChromeDriver(m_capability);
 	}
 
 	@AfterClass
