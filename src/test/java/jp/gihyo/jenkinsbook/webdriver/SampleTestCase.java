@@ -12,6 +12,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 
 import jp.gihyo.jenkinsbook.page.ResultPage;
 import jp.gihyo.jenkinsbook.page.TopPage;
@@ -24,8 +25,10 @@ public class SampleTestCase {
 	@BeforeClass
 	public static void setUpClass() throws IOException {
 		prop.load(new FileInputStream("src/test/resources/selenium.properties"));
+		EdgeOptions options = new EdgeOptions();
+		options.setBinary("src/test/resources/msedgedriver");
 		System.setProperty("webdriver.edge.driver", "src/test/resources/msedgedriver");
-		driver = new EdgeDriver();
+		driver = new EdgeDriver(options);
 	}
 
 	@AfterClass
