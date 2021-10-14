@@ -27,7 +27,7 @@ public class SampleTestCase {
 		prop.load(new FileInputStream("src/test/resources/selenium.properties"));
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/msedgedriver");
 		DesiredCapabilities m_capability = DesiredCapabilities.edge();
-		driver = new EdgeDriver(m_capability);
+		driver = new ChromeDriver(m_capability);
 	}
 
 	@AfterClass
