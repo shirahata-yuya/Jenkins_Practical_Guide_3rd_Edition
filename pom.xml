@@ -54,6 +54,9 @@
     <maven-site.version>3.6.1</maven-site.version>
     <maven-surefire-report.version>2.20</maven-surefire-report.version>
     <maven-war.version>3.0.0</maven-war.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven-surefire.version>2.20</maven-surefire.version>
 
     
     <!-- Web Servlet Properties -->
@@ -105,6 +108,11 @@
           <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugin</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${maven-surefire.version}</version>
       </plugin>
       
       <!-- Build Configuration for Checkstyle -->
@@ -163,5 +171,11 @@
       </plugin>
       
     </plugins>
+      <testResources>
+        <testResource>
+          <directory>src/test/resources</directory>
+          <filtering>true</filtering>
+        </testResource>
+      </testResources>
   </build>
 </project>
