@@ -12,6 +12,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -31,7 +32,8 @@ public class SampleTestCase {
 		System.setProperty("webdriver.chrome.whitelistedIps", "");
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/msedgedriver");	
 		DesiredCapabilities m_capability = DesiredCapabilities.edge();
-		driver = new ChromeDriver(m_capability);
+		final ChromeDriverService service = new ChromeDriverService.Builder().usingPort(9515).build();
+		driver = new ChromeDriver(service,m_capability);
 	}
 
 	@AfterClass
