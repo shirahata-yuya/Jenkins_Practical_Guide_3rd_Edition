@@ -12,6 +12,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import jp.gihyo.jenkinsbook.page.ResultPage;
@@ -25,6 +26,9 @@ public class SampleTestCase {
 	@BeforeClass
 	public static void setUpClass() throws IOException {
 		prop.load(new FileInputStream("src/test/resources/selenium.properties"));
+		ChromeOptions chromeOptions= new ChromeOptions();
+		chromeOptions.setBinary("src/test/resources/msedgedriver");
+		System.setProperty("webdriver.chrome.whitelistedIps", "");
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/msedgedriver");	
 		DesiredCapabilities m_capability = DesiredCapabilities.edge();
 		driver = new ChromeDriver(m_capability);
