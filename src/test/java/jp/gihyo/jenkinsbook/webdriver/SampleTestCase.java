@@ -25,7 +25,8 @@ public class SampleTestCase {
 	@BeforeClass
 	public static void setUpClass() throws IOException {
 		prop.load(new FileInputStream("src/test/resources/selenium.properties"));
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/msedgedriver.exe");
+		
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/msedgedriver");
 		DesiredCapabilities m_capability = DesiredCapabilities.edge();
 		driver = new ChromeDriver(m_capability);
 	}
