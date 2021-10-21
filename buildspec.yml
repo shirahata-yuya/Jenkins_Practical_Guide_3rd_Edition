@@ -7,12 +7,10 @@
    pre_build: 
      commands: 
        - echo Nothing to do in this phase 
-       - chmod +x src/test/resources/msedgedriver
    build: 
      commands: 
        - echo Build started on `date` 
-       - mvn clean package 
-       - mvn test
+       - mvn clean package
    post_build: 
      commands: 
        - echo Nothing to do in this phase
