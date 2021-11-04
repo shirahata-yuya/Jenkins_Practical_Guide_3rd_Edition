@@ -4,9 +4,9 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=windows-31j">
-		<title>エラー画面</title>
+		<title>77777</title>
 	</head>
 	<body>
-		<p name="main">エラー</p>
+		<p name="main">1234567890</p>
 	</body>
 </html>
