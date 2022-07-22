@@ -22,6 +22,7 @@
     </dependency>
     
     <!-- JUnit Libraries -->
+    <!--
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -35,7 +36,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
+  -->
   <properties>
     <!-- Project Properties -->
     <java.version>1.8</java.version>
@@ -58,18 +59,23 @@
     <jsp-api.version>2.3.1</jsp-api.version>
     
     <!-- JUnit Properties -->
+    <!--
     <junit.version>4.12</junit.version>
     <easymock.version>3.4</easymock.version>
-  
+    -->
     <!-- Checkstyle Properties -->
+    <!--
     <maven-checkstyle.version>2.17</maven-checkstyle.version>
-    
+    -->
     <!-- Findbugs Properties -->
+    <!--
     <findbugs-maven.version>3.0.4</findbugs-maven.version>
-    
+    -->
     <!-- JaCoCo Properties -->
+    <!--
     <jacoco-maven.version>0.7.9</jacoco-maven.version>
     <jacoco.include.package>**/*</jacoco.include.package>
+    -->
   </properties>
   
   <build>
@@ -106,6 +112,7 @@
       </plugin>
       
       <!-- Build Configuration for Checkstyle -->
+      <!--
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
@@ -124,8 +131,10 @@
           </execution>
         </executions>
       </plugin>
+      -->
       
       <!-- Build Configuration for Findbugs -->
+      <!--
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
@@ -144,8 +153,10 @@
           </execution>
         </executions>
       </plugin>
+      -->
       
       <!-- Build Configuration for JaCoCo -->
+      <!--
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
@@ -158,7 +169,8 @@
             </goals>
           </execution>
         </executions>
-      </plugin>     
+      </plugin>
+     -->
     </plugins>
   </build>
 </project>
