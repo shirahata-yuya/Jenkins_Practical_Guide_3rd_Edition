@@ -22,7 +22,6 @@
     </dependency>
     
     <!-- JUnit Libraries -->
-    <!--
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -36,7 +35,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  -->
+  
   <properties>
     <!-- Project Properties -->
     <java.version>1.8</java.version>
@@ -59,10 +58,9 @@
     <jsp-api.version>2.3.1</jsp-api.version>
     
     <!-- JUnit Properties -->
-    <!--
     <junit.version>4.12</junit.version>
     <easymock.version>3.4</easymock.version>
-    -->
+   
     <!-- Checkstyle Properties -->
     <!--
     <maven-checkstyle.version>2.17</maven-checkstyle.version>
