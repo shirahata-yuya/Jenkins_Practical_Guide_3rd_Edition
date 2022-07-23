@@ -16,8 +16,6 @@
        - echo Nothing to do in this phase
  artifacts: 
    files: 
-     - appspec.yml
-     - deploy.sh
      - target/surefire-reports/*
    discard-paths: yes 
  reports:
