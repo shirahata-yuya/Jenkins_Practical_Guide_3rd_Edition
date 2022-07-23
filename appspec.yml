@@ -2,8 +2,6 @@ version: 0.0
 os: linux 
 files: 
   - source: ./sampleproject.war
-    destination: /var/www/html/app
-  - source: ./sampleproject.war
     destination: /var/jenkins-demo-web/
 hooks:
   ApplicationStart:
