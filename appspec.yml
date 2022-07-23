@@ -1,7 +1,7 @@
 version: 0.0 
 os: linux 
 files: 
-  - source: ./sampleproject.war
+  - source: ./index.jsp
     destination: /var/jenkins-demo-web/
 hooks:
   ApplicationStart:
