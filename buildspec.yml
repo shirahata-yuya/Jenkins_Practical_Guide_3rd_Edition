@@ -14,12 +14,6 @@
    post_build: 
      commands: 
        - echo Nothing to do in this phase
- reports:
-   junit:
-     files:
-      - '**/*'
-     base-directory: "target/surefire-reports"
-     file-format: 'JUnitXML'
  cache: 
    paths: 
      - '/root/.m2/**/*' 
