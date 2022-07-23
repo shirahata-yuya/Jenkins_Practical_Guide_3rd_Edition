@@ -14,10 +14,6 @@
    post_build: 
      commands: 
        - echo Nothing to do in this phase
- artifacts: 
-   files: 
-     - target/surefire-reports/*
-   discard-paths: yes 
  reports:
    junit:
      files:
