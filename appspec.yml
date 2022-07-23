@@ -2,9 +2,6 @@ version: 0.0
 os: linux 
 files: 
   - source: ./sampleproject.war
-    destination: /var/jenkins-demo-web/
-hooks:
-  ApplicationStart:
-    - location: deploy.sh
-      runas: root
+    destination: /var/www/html/app
+
 
