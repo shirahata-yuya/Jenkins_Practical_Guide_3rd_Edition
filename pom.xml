@@ -38,7 +38,7 @@
   
   <properties>
     <!-- Project Properties -->
-    <java.version>11</java.version>
+    <java.version>8</java.version>
     <maven.test.failure.ignore>true</maven.test.failure.ignore>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -60,20 +60,7 @@
     <!-- JUnit Properties -->
     <junit.version>4.12</junit.version>
     <easymock.version>3.4</easymock.version>
-   
-    <!-- Checkstyle Properties -->
-    <!--
-    <maven-checkstyle.version>2.17</maven-checkstyle.version>
-    -->
-    <!-- Findbugs Properties -->
-    <!--
-    <findbugs-maven.version>3.0.4</findbugs-maven.version>
-    -->
-    <!-- JaCoCo Properties -->
-    <!--
-    <jacoco-maven.version>0.7.9</jacoco-maven.version>
-    <jacoco.include.package>**/*</jacoco.include.package>
-    -->
+  
   </properties>
   
   <build>
@@ -108,67 +95,6 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>${maven-surefire.version}</version>
       </plugin>
-      
-      <!-- Build Configuration for Checkstyle -->
-      <!--
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>${maven-checkstyle.version}</version>
-        <executions>
-          <execution>
-            <id>validate</id>
-            <phase>validate</phase>
-            <configuration>
-              <configLocation>config/checkstyle/sun_checks.xml</configLocation>
-              <failOnViolation>false</failOnViolation>
-            </configuration>
-            <goals>
-              <goal>check</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      -->
-      
-      <!-- Build Configuration for Findbugs -->
-      <!--
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>findbugs-maven-plugin</artifactId>
-        <version>${findbugs-maven.version}</version>
-        <executions>
-          <execution>
-            <id>process-classes</id>
-            <phase>process-classes</phase>
-            <configuration>
-              <xmlOutput>true</xmlOutput>
-              <failOnError>false</failOnError>
-            </configuration>
-            <goals>
-              <goal>check</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      -->
-      
-      <!-- Build Configuration for JaCoCo -->
-      <!--
-      <plugin>
-        <groupId>org.jacoco</groupId>
-        <artifactId>jacoco-maven-plugin</artifactId>
-        <version>${jacoco-maven.version}</version>
-        <executions>
-          <execution>
-            <id>default-prepare-agent</id>
-            <goals>
-              <goal>prepare-agent</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-     -->
     </plugins>
   </build>
 </project>
