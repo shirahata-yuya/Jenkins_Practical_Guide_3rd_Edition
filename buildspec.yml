@@ -21,5 +21,14 @@
      - deploy.sh
      - target/surefire-reports/*
    discard-paths: yes 
+ reports:
+    junit:
+      files:
+       - '**/*'
+      base-directory: "target/surefire-reports"
+      file-format: 'JUnitXML'
+ cache: 
+   paths: 
+     - '/root/.m2/**/*' 
 
 
