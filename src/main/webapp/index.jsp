@@ -4,15 +4,15 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=windows-31j">
-		<title>“ü—Í‰æ–Ê</title>
+		<title>å…¥åŠ›ç”»é¢</title>
 	</head>
 	<body>
-		<h1>ƒTƒ“ƒvƒ‹ƒvƒƒOƒ‰ƒ€</h1>
+		<h1>ãƒ†ã‚¹ãƒˆãƒ—ãƒ­ã‚°ãƒ©ãƒ </h1>
 		<form action="./SampleServlet" method="post">
-			<label for="LastName">–¼Žš</label>: <input type="text" name="LastName" /><br />
-			<label for="FirstName">–¼‘O</label>: <input type="text" name="FirstName" /><br />
+			<label for="LastName">åå­—</label>: <input type="text" name="LastName" /><br />
+			<label for="FirstName">åå‰</label>: <input type="text" name="FirstName" /><br />
 			<input type="hidden" name="action" value="hello" />
-			<input type="submit" name="send" value="‘—M" />
+			<input type="submit" name="send" value="é€ä¿¡" />
 		</form>
 	</body>
 </html>
